@@ -77,7 +77,7 @@ function update() {
      ctx.fillStyle = 'lime';
      snake.cells.forEach((cell, index) => {
          ctx.beginPath();
-         ctx.roundRect(cell.x, cell.y, grid, grid, [10]);  // Use round rectangle
+         ctx.roundRect(cell.x, cell.y, grid, grid, [10]);
          ctx.fill();
  
          if (cell.x === apple.x && cell.y === apple.y) {
